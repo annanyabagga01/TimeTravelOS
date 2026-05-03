@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="era-1990">
+
+    <!-- Scroll Progress Timeline -->
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="timeline-progress" id="timelineProgress"></div>
+        <div class="timeline-dot" id="timelineDot"></div>
+        <div class="timeline-labels">
+            <span>1995</span>
+            <span>2005</span>
+            <span>2025</span>
+            <span>2050</span>
+        </div>
+    </div>
+
+    <!-- Main Content Wrapper (Height added for scrolling) -->
+    <div class="scroll-container">
+        
+        <!-- Sticky UI -->
+        <div class="sticky-ui">
+            <!-- Navbar & Era Indicator -->
+            <nav class="navbar">
+                <div class="nav-left">
+                    <button class="start-btn">Start</button>
+                    <div class="logo">TimeTravelOS</div>
+                </div>
+                <div class="era-indicator">
+                    Year: <span id="currentYear">1995</span>
+                </div>
+            </nav>
+
+            <!-- Main Content Area -->
+            <main class="content">
+                <div class="card-section">
+                    <div class="card">
+                        <div class="card-image"></div>
+                        <h2 class="card-title">System Status</h2>
+                        <p class="card-text">All systems are currently operational. The timeline is stable and ready for navigation.</p>
+                        <button class="primary-btn" id="actionBtn">Execute Command</button>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-image alt"></div>
+                        <h2 class="card-title">Data Archives</h2>
+                        <p class="card-text">Accessing historical records across multiple dimensions and temporal zones.</p>
+                        <button class="secondary-btn">Browse Archives</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
