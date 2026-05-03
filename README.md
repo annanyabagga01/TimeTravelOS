@@ -55,4 +55,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
+Annanya Bagga
 *Built with ❤️ for the future (and the past).*
